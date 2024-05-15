@@ -1,0 +1,61 @@
+
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <style>
+      span{
+        color:red;
+      }
+    </style>
+    <link rel="stylesheet" href="styl.css" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" >
+</head>
+    <body>
+    <h2>Quiz</h2>
+      <div class="back">
+        <br>
+      &emsp;<br>
+      &emsp;<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      <img src="images.jpeg" height="350" width="350" id="img1">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      
+       <center> <button id="m" class="btn btn-danger btn-lg" data-bs-target="#m1" data-bs-toggle="modal"><b>LOGIN HERE</b></button></center>
+       
+        <div class="modal fade" id="m1" tabindex="-1"data-bs-backdrop="static">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5">LOGIN</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="login.php" method="post">
+                    <label for="u1"> Username</label>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                        <span id="username1"></span>
+
+                        <input type="text" placeholder="Enter Username" name="username" class="form-control" id="u1" required><br>
+                       </div>
+
+                        <label for="p"> Password</label>
+                        
+                         <input type="password" placeholder="Enter Password" name="password" id="p" class="form-control" required><br>
+                    &ensp;&ensp;&ensp;&ensp;<button type="reset" class="btn btn-danger">reset</button>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                   <button type="submit" class="btn btn-success" name="login">login</button><br><br>
+                </form>
+                </div>
+                <div class="modal-footer">
+                    
+                    if new
+                  <a href="register.php" class="btn btn-primary">register</a>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+          </div>
+      
+    </body>
+
+</html>

@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+body{
+    background:gray;
+
+}
+.wrapper{
+    margin:50px;
+    display: grid;
+    gap:15px;
+    grid-template-columns: repeat(auto-fill,265px);
+
+}
+.wrapper li{
+   height: 250px;
+    list-style:none;
+    border-radius:5px;
+    background: white;
+    padding: 15px 20px 20px;
+}
+.add-box,.icon,.bottom-content,.settings .menu li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+
+}
+.add-box{
+    
+    justify-content: center;
+    flex-direction: column;
+    cursor:pointer;
+}
+.add-box .icon{
+    height: 78px;
+    font-size:40px;
+    color:green;
+    width: 78px;
+    border-radius: 50%;
+    border:2px dashed black;
+}
+.add-box p{
+    color:blue;
+    font-weight: 500;
+    margin-top:20px;
+
+}
+.wrapper .note{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.note p{
+    font-size:22px;
+    font-weight:500;
+}
+.note  span{
+    font-weight: 16px;
+    margin-top:5px;
+    color:"black";
+    display:block;
+}
+.note .bottom-content{
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+}
+.bottom-content span{
+color:green;
+font-size: 14px;
+}
+.bottom-content .settings i{
+    color:green;
+    font-size: 14px;
+    cursor: pointer;
+    }
+    .settings{
+        position: relative;
+
+    }
+    .settings .menu{
+        position: absolute;
+        bottom: 0;
+        border-radius: 4px;
+        box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    }
+.settings .menu li{
+    height: 25px;
+    border-radius: 0;
+
+}

@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+    background-image: url('index.jpeg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    height:100%;
+    background-position: center;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    z-index: 100;
+
+}
+.logo{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: red;
+
+}
+
+
+.home{
+    color:blanchedalmond;
+    height: 100vh;
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-content{
+    max-width: 600px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.home-content h1{
+    font-size: 78px;
+    
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(0, 0,0,.3);
+}
+.home-content p{
+   font-size: 16px;
+   text-align: center;
+   text-shadow: 0 0 10px rgba(0, 0,0,.3);
+
+}
+.home-content .start-btn{
+    width: 190px;
+    height:55px;
+    background: salmon;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px salmon;
+    font-size: 18px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s;
+
+}
+.home-content .start-btn:hover{
+    background: black;
+    box-shadow: none;
+
+}
+
+.quiz-section{
+    position: relative;
+    left: 0;
+    width: 100%;
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: .8s ease-in-out;
+    transition-delay: .25s;
+}
+.quiz-section .quiz-box{
+    position: relative;
+    width: 500px;
+    background: transparent;
+    border: 2px solid pink;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+}
+.quiz-box h1{
+    font-size: 32px;
+    text-align: center;
+    background: linear-gradient(45deg,transparent,red,transparent);
+    border-radius: 6px;
+    
+}
+.quiz-box .quiz-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid black;
+}
+
+.quiz-header span{
+    font-size: 15px;
+    font-weight: 500;
+}
+.quiz-header span{
+    background: #c40094;
+    border-radius: 3px;
+    padding: 7px;
+}
+.quiz-box .question-text{
+    font-size: 24px;
+    font-weight: 600;
+}
+.option-list .option-text{
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 2px solid rgba(8, 8, 8, 0.2);
+    border-radius: 2px;
+    font-size: 17px;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: .3s;
+}
+.option-list .option-text:hover{
+    background: rgba(255, 255, 255,.1);
+    background-color: rgba(255, 255, 255,.1);
+
+}
+
+.option-list .option-text.correct{
+    background: gray;
+    color: green;
+    border-color: green;   
+}
+.option-list .option-text.incorrect{
+    background: gray;
+    color: red;
+    border-color: red;   
+}
+.option-list .option-text.disabled{
+    pointer-events: none;
+}
+.quiz-box .quiz-footer{
+    border-top: 2px solid black;
+    padding-top: 20px;
+}
+
+ .quiz-footer .question-total {
+    font-weight: 600;
+    font-size: 16px;
+}
+.quiz-footer .next-btn{
+    width: 100px;
+    height: 45px;
+    background: rgba(255, 255, 255,.1);
+    border: 2px solid rgba(255, 255, 255,.1);
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: rgba(255, 255, 255,.3);
+    font-weight: 600;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .5s;
+}
+.quiz-footer .next-btn:hover{
+    background: purple;
+    border-color: blue;
+}
+.quiz-footer .next-btn.active{
+    pointer-events: auto;
+}
+.quiz-footer .score-btn{
+    pointer-events: none;
+
+}
+.quiz-footer .score-btn.active{
+    pointer-events: auto;
+    
+}
+
