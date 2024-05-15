@@ -1,1 +1,1 @@
-I developed Quiz Champ, a web-based quiz application, using HTML, CSS, JavaScript, and MySQL. This project is designed to provide an engaging and educational platform where users can test and expand their knowledge across a variety of subjects.
+I developed Quiz Champ, a web-based quiz application, using HTML, CSS, JavaScript, and MySQL. Implemented features for interactive quiz and result tracking.This project is designed to provide an engaging and educational platform where users can test and expand their knowledge across a variety of subjects.
